@@ -6,6 +6,7 @@ import sys
 # leave in place for now, above code enables quick local testing
 
 from parenttext_pipeline.pipelines import run_pipeline
+from parenttext_core.config import core_spreadsheet_ids, ab_testing_sheet_ID, eng_edits_sheet_ID
 from config import *
 
 def main():
