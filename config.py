@@ -51,8 +51,8 @@ sources = [
             safeguarding,
         ],
         "crowdin_name": "text_for_translators",
-        #"tags": [1, "delivery",1, "menu", 2,"south_africa"],
-        "tags": [2, "south_africa"],
+        # "tags": [1, "delivery",1, "menu", 2,"south_africa"],
+        "tags": [2, "south_africa", 3, "teen"],
         "split_no": 3
     },
 ]
