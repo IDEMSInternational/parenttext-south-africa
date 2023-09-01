@@ -23,7 +23,7 @@ jobs:
         env:
           CREDENTIALS: ${{ secrets.CREDENTIALS }}
         run: |
-          python produce_flows.py
+          python -m parenttext_pipelines.cli
           echo upload=${{ inputs.upload }}
       - name: Publish output folder
         uses: actions/upload-artifact@v2
