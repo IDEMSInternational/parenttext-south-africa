@@ -85,6 +85,12 @@ class BlockMetadataModel(DataRowModel):
 	include_if_cond: str = ''
 	args: str = ''
 
+
+#######
+##demo
+class ShortDemoModel(DataRowModel):
+	onb_qst: List[str] = []
+
 #########################################################
 ##goal check in
 
@@ -178,8 +184,8 @@ class LtpActivityModel (DataRowModel):
 	name: str = ''
 	text: str = ''
 	act_type: List[str] = ["Active"] #???
-	act_age: List[int] = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17] #???
-
+	act_age: List[int] = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17] 
+	use_in_demo: str = ''
 ################################
 ## home activity check-in
 
@@ -310,6 +316,20 @@ class TimedProgrammeModel(DataRowModel):
 class ActivityTypeModel(DataRowModel):
 	option_name: str = ''
 
+class ActivityOfferModel(DataRowModel):
+	activity_handler_flow: str = ''
+	offer_msg: str = ''
+	accept: str = ''
+	refuse: str = ''
+	refuse_msg: str = ''
+	next_offer_msg: str = ''
+	next_accept: str = ''
+	next_refuse: str = ''
+	next_refuse_msg: str = ''
+	next_refuse_flow: str = ''
+	next_other_opt: str = ''
+	next_other_msg: str = ''
+	next_other_flow: str = ''
 
 class ComicNamesModel(DataRowModel):
 	names: List[str] = []
