@@ -3,3 +3,10 @@ from rpft.parsers.common.rowparser import ParserModel
 from parenttext_pipeline.models.parenttext_models import *
 from typing import List
 
+
+class GoalModel(DataRowModel):
+	goal_name: str = ''
+	priority: str = ''
+	age_group: str = ''
+	relationship: str = ''
+	modules: List[str] = []
